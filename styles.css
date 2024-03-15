@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    position: relative;
+}
+
+.tower {
+    border: 0.5px solid #a6a6a6; /* borda mais clara e fina */
+    width: 20px;
+    height: 200px;
+    margin: 0 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center;
+    background-color: #f5deb3;
+    border-radius: 10px 10px 0 0; /* somente o topo da torre arredondado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); 
+}
+
+.base {
+    width: 100%; /* Largura da base */
+    height: 20px; /* Altura da base */
+    background-color: #f5deb3; /* Cor da base */
+    border-radius: 5px; /* Bordas arredondadas */
+    position: absolute; /* Posiciona a base absolutamente dentro do container */
+    bottom: -10px; /* move a base um pouco para baixo */
+}
+
+.disk {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1px; /* adiciona um espaço entre os discos e a base */
+}
+
+.disk1 { background-color: #e74c3c; }
+.disk2 { background-color: #f39c12; }
+.disk3 { background-color: #2ecc71; }
+.disk4 { background-color: #3498db; }
+.disk5 { background-color: #9b59b6; }
+.disk6 { background-color: #e74c3c; }
+.disk7 { background-color: #f39c12; }
+.disk8 { background-color: #2ecc71; }
+.disk9 { background-color: #3498db; }
+.disk10 { background-color: #9b59b6; }
+
+
+.controls {
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #3498db; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    font-size: 0.9em;
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+input[type="number"] {
+    width: 60px; 
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+label, p {
+    font-size: 1.1em; 
+    color: #333;
+    margin-bottom: 10px; 
+}
+
